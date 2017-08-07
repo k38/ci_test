@@ -10,7 +10,7 @@ def calc():
 def test_add(calc, a, b, r):
     assert calc.add(a, b) == r
 
-@pytest.mark.parametrize("a, b, r", [(9, 8, 1), (1, 1, 0)])
+@pytest.mark.parametrize("a, b, r", [(9, 8, 1), (1, 1, 0), (3, 2, 1)])
 def test_sub(calc, a, b, r):
     assert calc.sub(a, b) == r
 
