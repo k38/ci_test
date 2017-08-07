@@ -6,7 +6,7 @@ from calculator import Calculator
 def calc():
     return Calculator()
 
-@pytest.mark.parametrize("a, b, r", [(9, 8, 17), (1, 1, 2)])
+@pytest.mark.parametrize("a, b, r", [(9, 8, 17), (1, 1, 2), (1, 2, 3)])
 def test_add(calc, a, b, r):
     assert calc.add(a, b) == r
 
